@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Styles -->
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Animate CSS CDN -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/index.css">
+
+    <title>Prakash | My Portfolio</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+
+        <h1><a href="/index.html" id="logoImage">
+                <img src="assets/images/nameLogo.webp" alt="">
+            </a></h1>
+        <ul class="navigation">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+            <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about" data-aos="fade-right">
+        <img src="assets/images/my-image.jpg" alt="jane-doe" loading="lazy" class="hero-img" />
+        <div class="bio animate__animated animate__shakeX" data-aos="fade-left">
+            <h2 class="bio-title">Hey ! I m</h2>
+            <!-- <p class="bio-text">
+                <strong>Name:</strong><span style="color: lightgray;"> ShashiPrakash</span>
+            </p> -->
+            <div class="subheadings">
+                <h1>ShashiPrakash</h1>
+                <a href="" class="typewrite" data-period="2000"
+                    data-type='["I am ui developer", "I love frontend", "I love to code" ]'>
+                    <span class="wrap"></span>
+                </a>
+            </div>
+        </div>
+    </section><br>
+
+    <!-- More about -->
+    <section class="more-about" data-aos="fade-up">
+        <h2>More About Me</h2>
+        <p style="text-align: center;">
+            <i><strong> Hi There !</strong> I'M frontend Developer who loves building user-friendly website and web
+                applicatiom.I
+                also really
+                like drawing with css.Most Recently, I've been building web application with Javascript and
+                Jquery.<br>
+                I'm currently intrested in learning more about accessibility and delving deeper into css and
+                animation.</i>
+        </p>
+
+
+    </section>
+
+    <section class="skills" id="skills" data-aos="fade-up">
+        <h2 class="skill-header">My Skills</h2>
+
+        <div class="skills-wrapper">
+            <div class="first-set animate__animated animate__pulse" data-aos="fade-up">
+                <img src="assets/images/js.png" alt="" loading="lazy" class="icon icon-card" />
+                <img src="assets/images/jquery.png" alt="" loading="lazy" class="icon icon-card" />
+                <img src="assets/images/react-js.png" alt="" loading="lazy" class="icon icon-card" />
+            </div>
+
+            <div class="second-set animate__animated animate__pulse" data-aos="fade-up">
+                <img src="assets/images/html5.png" alt="" loading="lazy" class="icon icon-card" />
+                <img src="assets/images/css3.png" alt="" loading="lazy" class="icon icon-card" />
+                <img src="assets/images/bootstrap.png" alt="" loading="lazy" class="icon icon-card" />
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Skills section -->
+    <section class="projects" id="projects" data-aos="fade-up">
+        <h2 class="projects-title">Some of my Recent Projects</h2>
+        <div class="projects-container">
+            <div class="project-container project-card">
+                <img src="assets/images/ed-logo.webp" alt="expense-tracker" style="width: 18%;border-radius: 50%;"
+                    loading="lazy" class="project-pic" />
+                <h3 class="project-title">Ednectar</h3>
+                <p class="project-details">
+                    Ednectar is based on the online F.I.R. system which is using of javascript and jquery.
+                </p>
+                <a target="_blank" class="project-link">Check it Out</a>
+            </div>
+            <div class="project-container project-card">
+                <img src="assets/images/circle.png" alt="netflic-clone" id="loading" loading="lazy"
+                    class="project-pic" />
+                <h3 class="project-title">My Portfolio</h3>
+                <p class="project-details">
+                    This is the all about me! Including of technology javascript,html & css.
+
+                </p>
+                <a href="/index.html" class="project-link">Check it Out</a>
+            </div>
+            <div class="project-container project-card">
+                <img src="assets/images/monitor.gif" alt="greeny-earth" loading="lazy" class="project-pic" />
+                <h3 class="project-title">My Blog</h3>
+                <p class="project-details">
+                    My blog is based on the brief description of
+                    all about html,css, javascript & jquery.
+                </p>
+                <a target="_blank" class="project-link">Check it Out</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Projects section -->
+    <section class="contact" id="contact" data-aos="fade-up">
+        <h2>Get In Touch With Me</h2>
+        <div class="contact-form-container">
+            <div class="contact-form">
+                <!-- <form form action="https://formsubmit.co/bef8155624e1ba51846b3bf3a65af350" method="POST"> -->
+                <form>
+                    <div class="form-control">
+                        <h4 id="alertMsg"></h4>
+
+                        <!-- <input type="TEXT" name="_subject" value="New email woooo"> -->
+                        <label for="name">Name</label>
+
+                        <input type="text" id="name" name="name" placeholder="Enter Your Name" class="input-field"
+                            required />
+
+                    </div>
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter Your Email" class="input-field"
+                            required />
+                    </div>
+                    <div class="form-control">
+                        <label for="message">Message</label>
+                        <textarea id="message" cols="60" rows="10" placeholder="Enter Your Message" name="message"
+                            class="input-field" required></textarea>
+                    </div>
+                    <input type="submit" id="submit-btn" value="submit" onclick="mailSend();" class="submit-btn" />
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact section -->
+
+    <!-- Social accounts - Fixed to the right -->
+    <div class="socials">
+        <a href="https://twitter.com/" target="_blank"><img src="assets/images/twitter.gif" target="_blank"
+                alt="Twitter" loading="lazy" class="socicon" /></a>
+        <a href="https://www.linkedin.com/in/prakash-shashi-a85566218" target="_blank"><img
+                src="assets/images/linkedin.jpg" alt="Instagram" height="10px" width="10px" loading="lazy"
+                class="socicon1" /></a>
+        <!-- <a href="#" target="_blank"><img src="assets/icons/icons8-linkedin-circled.gif" alt="Linkedin" loading="lazy"
+                class="socicon" /></a>
+        <a href="#" target="_blank"><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon" /></a> -->
+
+        <!-- Scroll to top -->
+        <i class="scroll-up" id="scroll-up"><img src="assets/images/2-ndicon.gif" class="socicon to-top up-arrow"
+                alt="scroll-up" /></i>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+
+        <p class="footer">
+            @ Feel free to contact
+        </p>
+    </footer>
+
+    <!-- Website scripts -->
+    <!-- <script src="assets/js/app.js"></script> -->
+
+    <!-- Ion icons scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <!-- <script src="js/bootstrap.min.css"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script> -->
+
+
+</body>
+
+</html>
