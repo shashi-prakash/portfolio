@@ -55,7 +55,7 @@
                 </a>
             </div>
         </div>
-    </section><br>
+    </section>
 
     <!-- More about -->
     <section class="more-about" data-aos="fade-up">
@@ -72,8 +72,8 @@
 
 
     </section>
-
-    <section class="skills" id="skills" data-aos="fade-up">
+    <span id="skills"></span>
+    <section class="skills" data-aos="fade-up">
         <h2 class="skill-header">My Skills</h2>
 
         <div class="skills-wrapper">
@@ -93,7 +93,8 @@
 
 
     <!-- Skills section -->
-    <section class="projects" id="projects" data-aos="fade-up">
+    <span id="projects"></span>
+    <section class="projects" data-aos="fade-up">
         <h2 class="projects-title">Some of my Recent Projects</h2>
         <div class="projects-container">
             <div class="project-container project-card">
@@ -113,7 +114,7 @@
                     This is the all about me! Including of technology javascript,html & css.
 
                 </p>
-                <a href="/index.html" class="project-link">Check it Out</a>
+                <a href="#" class="project-link">Check it Out</a>
             </div>
             <div class="project-container project-card">
                 <img src="assets/images/monitor.gif" alt="greeny-earth" loading="lazy" class="project-pic" />
@@ -130,20 +131,20 @@
 
 
     <!-- Projects section -->
-    <section class="contact" id="contact" data-aos="fade-up">
+    <span id="contact"></span>
+    <section class="contact" data-aos="fade-up">
         <h2>Get In Touch With Me</h2>
         <div class="contact-form-container">
             <div class="contact-form">
                 <!-- <form form action="https://formsubmit.co/bef8155624e1ba51846b3bf3a65af350" method="POST"> -->
-                <form>
+                <form id="myForm">
                     <div class="form-control">
                         <h4 id="alertMsg"></h4>
 
                         <!-- <input type="TEXT" name="_subject" value="New email woooo"> -->
                         <label for="name">Name</label>
 
-                        <input type="text" id="name" name="name" placeholder="Enter Your Name" class="input-field"
-                            required />
+                        <input type="text" id="name" name="name" placeholder="Enter Your Name" class="input-field" />
 
                     </div>
                     <div class="form-control">
@@ -154,9 +155,9 @@
                     <div class="form-control">
                         <label for="message">Message</label>
                         <textarea id="message" cols="60" rows="10" placeholder="Enter Your Message" name="message"
-                            class="input-field" required></textarea>
+                            class="input-field"></textarea>
                     </div>
-                    <input type="submit" id="submit-btn" value="submit" onclick="mailSend();" class="submit-btn" />
+                    <input type="button" id="submit-btn" value="submit" onclick="mailSend();" class="submit-btn" />
                 </form>
             </div>
         </div>
@@ -198,6 +199,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/sweetalert2@11.js"></script>
     <!-- <script src="js/bootstrap.min.css"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.min.js"></script> -->
