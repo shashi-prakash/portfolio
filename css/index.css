@@ -117,7 +117,7 @@ nav ul li {
   height: 25.5rem;
   width: 20.5rem;
   border-radius: 50%;
-  margin-top: 12px;
+  margin-top: 7%;
 }
 
 .bio {
@@ -148,6 +148,7 @@ nav ul li {
   padding: 0.3rem 0;
 }
 .more-about {
+  margin-top: 38vh;
   background-color: var(--bg-color);
   padding: 2rem 6rem;
 }
@@ -207,7 +208,14 @@ nav ul li {
   width: 22%;
   height: 60%;
 }
+.swal-overlay {
+  background-color: rgba(43, 165, 137, 0.45);
+}
 
+#alertStyle {
+  font-size: 18px;
+  color: red;
+}
 /* moving objects */
 #loading {
   -webkit-animation: rotation 6s infinite linear;
@@ -249,7 +257,7 @@ nav ul li {
     transform: translateX(0);
   }
   .hero {
-    margin-top: -4rem;
+    /* margin-top: -4rem; */
     flex-direction: column;
     gap: 0;
   }
@@ -264,7 +272,7 @@ nav ul li {
     width: 20.5rem;
   }
   .more-about {
-    margin-top: 2rem;
+    margin-top: 4rem;
     padding: 1rem 3.5rem;
   }
 
@@ -487,13 +495,16 @@ footer {
     max-width: 17.75rem;
   }
   .subheadings h1 {
-    font-size: 30px;
+    font-size: 29px;
+    text-align: center;
   }
   .typewrite {
-    margin-left: 3rem;
+    margin: 19%;
+    font-size: 22px;
   }
   .bio-title {
-    margin-left: 4rem;
+    margin: 1rem 0px 0px 4.5rem;
+    font-size: 24px;
   }
   #logoImage img {
     width: 55px;
