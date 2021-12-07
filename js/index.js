@@ -3,16 +3,58 @@ function mailSend() {
   let senderMail = document.getElementById("email").value;
   let message = document.getElementById("message").value;
   if (sender == "" || senderMail == "" || message == "") {
-    document.querySelector(
-      "#alertMsg"
-    ).innerHTML = ` *** Please fill the field ***`;
-  } else {
-    window.scrollTo({
-      top: 400,
-      left: 0,
-      behavior: "smooth",
+    // document.querySelector(
+    //   "#alertMsg"
+    // ).innerHTML = ` *** Please fill the field ***`;
+    let timerInterval;
+    Swal.fire({
+      title: "<h5 style='color:blue'><i>Sorry !</i></h5>",
+      html: "<h2 style='color:red'><i>Please fill the all fields ?<i></h2>",
+      timer: 7000,
+
+      didOpen: () => {
+        // Swal.showLoading();
+        const b = Swal.getHtmlContainer().querySelector("b");
+        timerInterval = setInterval(() => {
+          b.textContent = Swal.getTimerLeft();
+        }, 100);
+      },
+      willClose: () => {
+        clearInterval(timerInterval);
+      },
+    }).then((result) => {
+      /* Read more about handling dismissals below */
+      if (result.dismiss === Swal.DismissReason.timer) {
+        console.log("I was closed by the timer");
+      }
     });
-    document.querySelector("#alertMsg").innerHTML = `Thanks for contacting me`;
+  } else {
+    document.getElementById("myForm").reset();
+
+    let timerInterval;
+    Swal.fire({
+      title: "<h5 style='color:blue'><i>Ah !</i></h5>",
+      html: "<h2 style='color:red'><i>Thanks for contacting us.<i></h2>",
+      timer: 4000,
+      timerProgressBar: true,
+      didOpen: () => {
+        Swal.showLoading();
+        const b = Swal.getHtmlContainer().querySelector("b");
+        timerInterval = setInterval(() => {
+          b.textContent = Swal.getTimerLeft();
+        }, 100);
+      },
+      willClose: () => {
+        clearInterval(timerInterval);
+      },
+    }).then((result) => {
+      /* Read more about handling dismissals below */
+      if (result.dismiss === Swal.DismissReason.timer) {
+        console.log("I was closed by the timer");
+      }
+    });
+
+    // document.querySelector("#alertMsg").innerHTML = `Thanks for contacting me`;
   }
   // let body =
   //   `Name: ` +
